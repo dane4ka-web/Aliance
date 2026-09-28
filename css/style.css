@@ -11,6 +11,7 @@ body {
 }
 
 .header {
+  padding-top: 94px;
   height: 100vh;
 }
 
@@ -39,7 +40,11 @@ body {
   align-items: center;
   color: #fff;
   height: 94px;
-  position: relative;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 2;
   border-bottom: 1px solid rgba(235, 235, 240, 0.2);
 }
 .header-logo {
