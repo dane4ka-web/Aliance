@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -131,7 +131,48 @@
           </p>
           <button class="button">Подробнее о компании</button>
         </div>
-        <ul class="header-features">
+
+        <!-- основной блок слайдера -->
+        <div class="swiper">
+          <!-- обертка слайдера -->
+          <ul class="swiper-wrapper header-features">
+            <!-- слайды -->
+            <li class="swiper-slide header-features-item"><svg  width="36" height="36">
+              <use href="img/sprite.svg#time"></use>
+            </svg>
+            <p class="header-features-text">Непрерывная работа c 2017 года</p></li>
+            <li class="swiper-slide header-features-item"><svg width="36" height="36">
+              <use href="img/sprite.svg#certificate"></use>
+            </svg>
+            <p class="header-features-text">Вся продукция сертифицирована</p></li>
+            <li class="swiper-slide header-features-item"> <svg width="36" height="36">
+              <use href="img/sprite.svg#control"></use>
+            </svg>
+            <p class="header-features-text">Контроль качества на всех этапах</p></li>
+            <li class="swiper-slide header-features-item"><svg width="36" height="36">
+              <use href="img/sprite.svg#dilivery"></use>
+            </svg>
+            <p class="header-features-text">Возможны поставки по всей России</p></li>
+            <li class="swiper-slide header-features-item"><svg width="36" height="36">
+              <use href="img/sprite.svg#speed"></use>
+            </svg>
+            <p class="header-features-text">Оперативное производство</p></li>
+            
+          </ul>
+
+          <!-- кнопк навигации вперед-назад -->
+          <div class="slider-buttons">
+            <div class="slider-button-prev"><svg  width="36" height="24">
+              <use href="img/sprite.svg#prev"></use>
+            </svg></div>
+          <div class="slider-button-next"><svg  width="36" height="24">
+              <use href="img/sprite.svg#next"></use>
+            </svg></div>
+          </div>
+
+        
+
+        <!-- <ul class="header-features">
           <li class="header-features-item">
             <svg class="logo-svg" width="36" height="36">
               <use href="img/sprite.svg#time"></use>
@@ -162,7 +203,7 @@
             </svg>
             <p class="header-features-text">Оперативное производство</p>
           </li>
-        </ul>
+        </ul> -->
       </div>
     </header>
     <section class="section section-light">
@@ -205,6 +246,7 @@
         </ol>
       </div>
     </section>
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
